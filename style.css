@@ -1,24 +1,24 @@
-.content{
-    padding: 15px;
-    font-size: 18px;
-    background: #dbdfe5;
-    margin-bottom: 15px;
+.content {
+  padding: 15px;
+  font-size: 18px;
+  background: #dbdfe5;
+  margin-bottom: 15px;
 
-    margin: auto;
-    width: 50%;
-    border: 2px solid green;
-    padding: 10px;
+  margin: auto;
+  width: 50%;
+  border: 2px solid green;
+  padding: 10px;
 }
-.content.bg-alt{
-    background: #abb1b8;
+.content.bg-alt {
+  background: #abb1b8;
 }
-h2{
-    text-align:center;
+h2 {
+  text-align: center;
 }
 
 .green {
-    text-shadow: black;
+  text-shadow: black;
 }
-.output {
+/* .output {
     display: none;
-}
+} */

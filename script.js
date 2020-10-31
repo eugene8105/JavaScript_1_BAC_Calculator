@@ -1,21 +1,8 @@
 
-// $(function(){
-//     var val = o;
-//     var numOfBeers = $("#numBeers").val();
-//     alert(numOfBeers);
-// })
-
-// // for testing
-// $(function() {
-//     $("button").click(function() {
-//         $("h2").toggleClass("green");
-//     });
-// });
-
 $(document).ready(
     function () {
         // add event handlers
-        $("#splitCost").click(costEqualSpliter);
+        $("#submitButton").click(costEqualSpliter);
         // $("#tpipLength").click(showPopup);
     }
 )
@@ -52,7 +39,7 @@ function costEqualSpliter() {
 
     // get Hours Since Your First Drink
     var hoursPassed = parseFloat($("#hoursPassed").val());
-    
+
     // calculation
 
     // find total total From Drank Beers
