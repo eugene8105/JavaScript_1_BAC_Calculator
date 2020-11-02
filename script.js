@@ -2,12 +2,12 @@
 $(document).ready(
     function () {
         // add event handlers
-        $("#submitButton").click(costEqualSpliter);
+        $("#submitButton").click(bacCalc);
         // $("#tpipLength").click(showPopup);
     }
 )
 
-function costEqualSpliter() {
+function bacCalc() {
     // 1 beer price
     var liquidOuncesInBeer = 0.54;
     // total drank beers
@@ -52,12 +52,14 @@ function costEqualSpliter() {
     // find total liquid ounces
     totalLiquidOunces = (totalFromDrankBeers + totalFromDrankWine + totalFromDrankShots) * 7.5;
     // find Blood Alcohol Content
-    bloodAlcoholContent = totalLiquidOunces * weight;
+    bloodAlcoholContent = totalLiquidOunces / weight;
     bloodAlcoholContent = bloodAlcoholContent - (hoursPassed * 0.015);
 
     // output on the screen
     $("#costOutput").text(bloodAlcoholContent.toFixed(3));
 
     $("p.output").show();
+
+    return false;
 
 }
